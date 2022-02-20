@@ -12,6 +12,8 @@ public class PlaceOnPlane : MonoBehaviour
     private List<ARRaycastHit> hits;
 
     public GameObject model;
+    public GameObject initTextModel;
+
     private Vector2 touchPosition;
 
     // Start is called before the first frame update
@@ -46,6 +48,10 @@ public class PlaceOnPlane : MonoBehaviour
             {
                 model.transform.position = pose.position;
                 model.transform.rotation = pose.rotation;
+            }
+            if (initTextModel.activeInHierarchy)
+            {
+                Destroy(initTextModel);
             }
         }
     }
