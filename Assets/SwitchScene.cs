@@ -14,10 +14,19 @@ public class SwitchScene : MonoBehaviour
 
     }
 
-    void OnTriggerEnter(Collider other)
+    //void OnTriggerEnter(Collider other)
+   // {
+     //   Camera cam = gameObject.GetComponent<Camera>();
+    //    if (cam.tag == "MainCamera")
+    //        SceneManager.LoadScene(LevelIndex);
+    //}
+
+    private void OnCollisionEnter(Collision other)
     {
-        Camera cam = gameObject.GetComponent<Camera>();
-        if (cam.tag == "MainCamera")
-            SceneManager.LoadScene(LevelIndex);
+        if (other.gameObject.CompareTag("Door"))
+        {
+            Debug.Log("Switching Room");
+            SceneManager.LoadScene(1);
+        }
     }
 }
