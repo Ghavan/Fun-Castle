@@ -5,8 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class RefreshScene : MonoBehaviour
 {
+
     public void onRefreshButtonClicked()
     {
         SceneManager.LoadScene("Bowling");
     }
+
 }
