@@ -1128,7 +1128,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2596357e3b71f245ab0320def54f894, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ballObject: {fileID: 6878851299845502727, guid: 5ec5b0ca3921a9a45aee70890fb0d913, type: 3}
+  ballObject: {fileID: 6878851299845502727, guid: 5ec5b0ca3921a9a45aee70890fb0d913,
+    type: 3}
   arCamera: {fileID: 0}
   slider: {fileID: 0}
 --- !u!1 &2329904029633974296
@@ -1320,7 +1321,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7ead825211691cc4ab4607c2f04c57cd, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
