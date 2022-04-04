@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
+using UnityEngine.UI;
 
 public class AreaPlacement : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class AreaPlacement : MonoBehaviour
 
     private List<ARRaycastHit> raycastHits = new List<ARRaycastHit>();
     private GameObject instantiatedGame;
+    int score;
+    public Text scoreCount;
 
     public void placeObject()
     {
@@ -26,10 +29,12 @@ public class AreaPlacement : MonoBehaviour
                     plane.gameObject.SetActive(false);
 
                 aRSessionOrigin.GetComponent<ARPlaneManager>().enabled = false;
-
+                
             }
 
             instantiatedGame.transform.position = raycastHits[0].pose.position;
+            score = score + 1;
+            scoreCount.text = score + "";
         }
     }
 }
