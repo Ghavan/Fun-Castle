@@ -8,6 +8,8 @@ TagManager:
   - CubeShooterDoor
   - BowlingDoor
   - PortalDoor
+  - Pins
+  - Ball
   layers:
   - Default
   - TransparentFX
